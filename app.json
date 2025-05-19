@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "countomat",
+    "name": "Countomat",
     "slug": "countomat",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -16,7 +16,8 @@
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "edgeToEdgeEnabled": true
+      "edgeToEdgeEnabled": true,
+      "package": "com.anonymous.countomat"
     },
     "web": {
       "bundler": "metro",
