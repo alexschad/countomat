@@ -1,13 +1,13 @@
 import CounterItem from "@/components/CounterItem";
 import NoItems from "@/components/NoItems";
 import AddCounterModal from "@/components/ui/addCounterModal";
+import FloatingButton from "@/components/ui/FloatingButton";
 import useGlobalStyles from "@/hooks/useGlobalStyles";
+import { addCounter, getAllCounters } from "@/lib/counterStorage";
 import { Counter } from "@/shared/Types";
 import MaterialCommunityIcons from "@expo/vector-icons/MaterialCommunityIcons";
 import React, { useEffect, useState } from "react";
 import { FlatList, View } from "react-native";
-import FloatingButton from "../../components/ui/FloatingButton";
-import { addCounter, getAllCounters } from "../../lib/counterStorage";
 
 const CounterList = () => {
     const [counters, setCounters] = useState<Counter[]>([]);
